@@ -128,8 +128,8 @@ Every rejection test asserts the specific reason keyword, not merely that
 ## Verify
 
 ```sh
-clojure -M:test                                                        # JVM
-nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
+kbb -M:test                                                        # JVM
+kbb --backend sci --classpath "$(kbb -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
 ```
 
 `thread.mesh`'s 64-bit addresses use `quot`/`mod`/`+'`/`*'` rather than

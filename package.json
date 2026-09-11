@@ -3,6 +3,6 @@
   "private": true,
   "description": "Thread's 6LoWPAN adaptation layer (RFC 6282 IPHC, RFC 4944 fragmentation + mesh addressing) in portable .cljc",
   "scripts": {
-    "test:cljs": "nbb --classpath \"$(clojure -A:cljs -Spath)\" scripts/verify-cljs.cljk"
+    "test:cljs": "kbb --backend sci --classpath \"$(kbb -A:cljs -Spath)\" scripts/verify-cljs.cljk"
   }
 }
