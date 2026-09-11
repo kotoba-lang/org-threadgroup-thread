@@ -11,7 +11,7 @@
 ;; dependency on `org-csa-iot-zigbee` end to end under nbb, not just
 ;; under the JVM.
 ;;
-;;   nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljs
+;;   nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk
 (ns verify-cljs
   (:require [clojure.test :as t]
             [thread.dispatch-test]

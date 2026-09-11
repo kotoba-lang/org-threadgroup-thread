@@ -59,7 +59,7 @@ dependency in `deps.edn`, pinned to a commit on that repo's default
 branch, verified reachable with `gh api .../commits/main --jq .sha`
 before pinning) for it, because that repository built the MAC layer once
 and correctly, and Zigbee and Thread both actually put the same MAC frame
-shape on the air. `test/thread/integration_test.cljc` proves this is real
+shape on the air. `test/thread/integration_test.cljk` proves this is real
 rather than aspirational: it builds an `thread.iphc`-compressed payload,
 classifies its dispatch byte, wraps it in a real `ieee802154.mac/encode`
 frame, and decodes the whole thing back — end to end, on both the JVM and
@@ -129,7 +129,7 @@ Every rejection test asserts the specific reason keyword, not merely that
 
 ```sh
 clojure -M:test                                                        # JVM
-nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljs   # ClojureScript
+nbb --classpath "$(clojure -A:cljs -Spath)" scripts/verify-cljs.cljk   # ClojureScript
 ```
 
 `thread.mesh`'s 64-bit addresses use `quot`/`mod`/`+'`/`*'` rather than
