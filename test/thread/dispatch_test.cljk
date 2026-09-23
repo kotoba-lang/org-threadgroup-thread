@@ -1,5 +1,5 @@
 (ns thread.dispatch-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [thread.dispatch :as d]))
 
 (deftest classify-known-patterns

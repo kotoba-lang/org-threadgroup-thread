@@ -1,5 +1,5 @@
 (ns thread.iphc-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [thread.iphc :as iphc]))
 
 ;; ── shared test fixtures — hand-constructed per the byte layout in each

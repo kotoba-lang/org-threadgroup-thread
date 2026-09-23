@@ -1,5 +1,5 @@
 (ns thread.mesh-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [thread.mesh :as mesh]))
 
 ;; ;; constructed, not a published spec vector

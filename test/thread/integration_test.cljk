@@ -4,7 +4,7 @@
   actually resolves and its `ieee802154.mac` actually runs here, carrying
   a real `thread.iphc`-compressed payload inside a real 802.15.4 MAC
   frame — the shape Thread traffic is genuinely in on the wire."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [ieee802154.mac :as mac]
             [thread.iphc :as iphc]
             [thread.dispatch :as dispatch]))
