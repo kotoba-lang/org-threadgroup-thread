@@ -1,5 +1,5 @@
 (ns thread.frag-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [thread.frag :as frag]))
 
 ;; ;; constructed, not a published spec vector — a 300-byte datagram split
